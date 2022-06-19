@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "9acd6914-ca0f-411d-b7d0-8c6f472246ca",
+		"_postman_id": "937b9d16-9996-488d-9307-978ce3ee76d3",
 		"name": "NODEJSIUD",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "4683424"
+		"_exporter_id": "15335050"
 	},
 	"item": [
 		{
@@ -11,9 +11,21 @@
 			"item": [
 				{
 					"name": "ObtenerUsuarios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "localhost:5000/api/usuarios",
 							"host": [
@@ -35,7 +47,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Gabriela Ceballos\",\r\n    \"email\": \"gabriela@gmail.com\",\r\n    \"estado\": false\r\n}",
+							"raw": "{\r\n    \"nombre\": \"veronica\",\r\n    \"email\": \"vero@gmail.com\",\r\n    \"estado\": true\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -63,9 +75,21 @@
 			"item": [
 				{
 					"name": "GetTiposEquiposUsuarioActivos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    \r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "localhost:5000/api/tiposequipo/user-activo",
 							"host": [
@@ -88,7 +112,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"móviles\",\r\n    \"estado\": true,\r\n    \"usuario\": {\r\n        \"email\": \"gabriela@gmail.com\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"nombre\": \"movil\",\r\n    \"estado\": true,\r\n    \"usuario\": \"\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -136,7 +160,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"móviles\",\r\n    \"estado\": false,\r\n    \"usuario\": {\r\n        \"email\": \"julio@gmail.com\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"nombre\": \"móviles\",\r\n    \"estado\": true,\r\n    \"usuario\": {\r\n        \"email\": \"moni@gmail.com\"\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -163,6 +187,10 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "localhost:5000/api/tiposequipo/62845d001ddf9475616b05bc",
 							"host": [
@@ -185,9 +213,21 @@
 			"item": [
 				{
 					"name": "GetEstados",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "localhost:5000/api/estados",
 							"host": [
@@ -258,7 +298,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"bodega\",\r\n    \"estado\": true\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Depreciado\",\r\n    \"estado\": true\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -286,9 +326,21 @@
 			"item": [
 				{
 					"name": "GetMarcas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "localhost:5000/api/marcas",
 							"host": [
@@ -305,9 +357,21 @@
 				},
 				{
 					"name": "GetMarcaById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "localhost:5000/api/marcas/6288274d3b61f1f0615f0dc6",
 							"host": [
@@ -359,7 +423,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Asus\",\r\n    \"estado\": true\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Mac\",\r\n    \"estado\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -391,14 +455,8 @@
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "foto",
-									"type": "file",
-									"src": "/C:/Users/JULIOCESARMARTINEZ/Pictures/img_dibujos_para_colorear_de_hello_kitty_17064_600_square.jpg"
-								}
-							]
+							"mode": "raw",
+							"raw": ""
 						},
 						"url": {
 							"raw": "localhost:5000/api/inventarios/628854042d9bc50cfd170730/upload-image",
@@ -418,11 +476,18 @@
 				},
 				{
 					"name": "GetInventarios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
-							"raw": "localhost:5000/api/inventarios/",
+							"raw": "localhost:5000/api/inventarios/628854042d9bc50cfd170730",
 							"host": [
 								"localhost"
 							],
@@ -430,7 +495,7 @@
 							"path": [
 								"api",
 								"inventarios",
-								""
+								"628854042d9bc50cfd170730"
 							]
 						}
 					},
@@ -438,9 +503,16 @@
 				},
 				{
 					"name": "GetInventarioByID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "localhost:5000/api/inventarios/628854042d9bc50cfd170730",
 							"host": [
@@ -463,7 +535,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"serial\": \"2222-2222-3333\",\r\n    \"modelo\": \"Modelo xyz\",\r\n    \"descripcion\": \"Un equipo guardado\",\r\n    \"foto\": \"\",\r\n    \"color\": \"Verde\",\r\n    \"precio\": 500,\r\n    \"usuario\": \"6285a8c62411fc1b9a5ffe6f\",\r\n    \"marca\": \"6288274d3b61f1f0615f0dc6\",\r\n    \"estado\": \"62891ab2578f65bca4d10966\",\r\n    \"tipoEquipo\": \"6285b1a5c5e8f2c5593a242b\"\r\n}",
+							"raw": "{\r\n    \"serial\": \"2222-2222-4848\",\r\n    \"modelo\": \"Modelo XSSD\",\r\n    \"descripcion\": \"equipo modificado\",\r\n    \"foto\": \"\",\r\n    \"color\": \"negro\",\r\n    \"precio\": 550,\r\n    \"usuario\": \"62ac1f77e568320234b9d2d6\",\r\n    \"marca\": \"62ae4117f9d825a6591288f1\",\r\n    \"estado\": \"62ae403bf9d825a6591288ea\",\r\n    \"tipoEquipo\": \"62ac1fa8e568320234b9d2da\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -492,7 +564,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"serial\": \"2222-2222-3333\",\r\n    \"modelo\": \"Modelo xyz\",\r\n    \"descripcion\": \"Un equipo guardado modificado\",\r\n    \"usuario\": \"6285a8c62411fc1b9a5ffe6f\",\r\n    \"marca\": \"6288274d3b61f1f0615f0dc6\",\r\n    \"estado\": \"62891ab2578f65bca4d10966\",\r\n    \"tipoEquipo\": \"6285b1a5c5e8f2c5593a242b\"\r\n}",
+							"raw": "{\r\n    \"serial\": \"2222-2222-4848\",\r\n    \"modelo\": \"Modelo XSSD\",\r\n    \"descripcion\": \"equipo modificado\",\r\n    \"usuario\": \"62ac1f77e568320234b9d2d6\",\r\n    \"marca\": \"62ae4117f9d825a6591288f1\",\r\n    \"estado\": \"62ae403bf9d825a6591288ea\",\r\n    \"tipoEquipo\": \"62ac1fa8e568320234b9d2da\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -500,7 +572,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:5000/api/inventarios/628eea2e185af21230953f1f",
+							"raw": "localhost:5000/api/inventarios/62ae618da35cfd7cf22dec73",
 							"host": [
 								"localhost"
 							],
@@ -508,7 +580,7 @@
 							"path": [
 								"api",
 								"inventarios",
-								"628eea2e185af21230953f1f"
+								"62ae618da35cfd7cf22dec73"
 							]
 						}
 					},
@@ -516,9 +588,22 @@
 				},
 				{
 					"name": "GetImage",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"type": "file",
+									"src": "/C:/Users/monica/Desktop/actividad1-mongodb/uploads/img-de-Minnie-Mouse.jpg"
+								}
+							]
+						},
 						"url": {
 							"raw": "localhost:5000/api/inventarios/628854042d9bc50cfd170730/image",
 							"host": [
